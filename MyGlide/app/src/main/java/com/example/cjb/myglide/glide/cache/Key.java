@@ -1,5 +1,8 @@
 package com.example.cjb.myglide.glide.cache;
 
-public class Key {
+import java.security.MessageDigest;
 
+public interface Key {
+    void updateDiskCacheKey(MessageDigest messageDigest);
+    byte[] getKeyBytes();
 }
