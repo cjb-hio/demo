@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/status_bar_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/search_title_back"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_margin"
+            android:scaleType="center"
+            android:src="@mipmap/back"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/search_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_20"/>
+
+        <ImageView
+            android:id="@+id/search_title_search"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/title_margin"
+            android:scaleType="center"
+            android:src="@mipmap/sousuo"/>
+
+        <ImageView
+            android:id="@+id/search_title_baidumap"
+            android:layout_width="@dimen/margin_35"
+            android:layout_height="@dimen/margin_35"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/search_title_search"
+            android:src="@mipmap/baidumapaddress"/>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_statistics_title"
+        android:layout_below="@+id/rl_search_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/myLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:paddingRight="3dp">
+
+                <TextView
+                    android:id="@+id/search_lockID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/text_squre_bg"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/locKID"/>
+
+                <TextView
+                    android:id="@+id/search_DateTime"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/text_squre_bg"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:lines="1"
+                    android:text="@string/registDateTime"/>
+
+                <TextView
+                    android:id="@+id/search_result"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/text_squre_bg"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/lockResult"/>
+
+                <TextView
+                    android:id="@+id/search_action"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/text_squre_bg"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/areaName"/>
+
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <ListView
+                android:id="@+id/search_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/gray"
+                android:dividerHeight="1dp"
+                android:scrollbarSize="3dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Light_grey"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_statistics_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_above="@+id/ll_statistics"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_squre_bg"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="5dp"
+            android:text="已下装"
+            android:textSize="14sp"
+            android:textColor="@color/status_bar_color"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_squre_bg"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="5dp"
+            android:text="未下装"
+            android:textSize="14sp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_squre_bg"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="5dp"
+            android:text="总计"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_xiazhuang_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_squre_bg"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="5dp"
+            android:text="123456"
+            android:textSize="14sp"
+            android:textColor="@color/status_bar_color"/>
+
+        <TextView
+            android:id="@+id/tv_unxiazhuang_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_squre_bg"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="5dp"
+            android:text="1234567890"
+            android:textSize="14sp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/tv_xiazhuang_statistics"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_squre_bg"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="5dp"
+            android:text="1234567"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

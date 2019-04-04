@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 导航条 -->
+    <dimen name="title_margin">5dp</dimen>
+    <dimen name="common_title_height">50dp</dimen>
+    <dimen name="common_imageView_height">40dp</dimen>
+    <dimen name="common_title_imageView_height">35dp</dimen>
+    <dimen name="common_editText_height">30dp</dimen>
+
+
+    <!-- 字体大小 -->
+    <dimen name="textSize_12">12sp</dimen>
+    <dimen name="textSize_13">13sp</dimen>
+    <dimen name="textSize_14">14sp</dimen>
+    <dimen name="textSize_15">15sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="textSize_18">18sp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+    <dimen name="textSize_22">22sp</dimen>
+
+    <!-- button -->
+    <dimen name="controls_30">30dp</dimen>
+    <dimen name="controls_35">35dp</dimen>
+    <dimen name="controls_40">40dp</dimen>
+    <dimen name="controls_45">45dp</dimen>
+    <dimen name="controls_50">50dp</dimen>
+    <dimen name="controls_55">55dp</dimen>
+    <dimen name="controls_60">60dp</dimen>
+    <dimen name="controls_65">65dp</dimen>
+
+    <!-- margin -->
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_55">55dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_65">65dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_75">75dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+
+
+    <!-- padding -->
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="padding_40">40dp</dimen>
+    <dimen name="padding_50">50dp</dimen>
+    <dimen name="padding_60">60dp</dimen>
+    <dimen name="controls_80">80dp</dimen>
+    <dimen name="controls_140">140dp</dimen>
+    <dimen name="controls_100">100dp</dimen>
+    <dimen name="controls_105">105dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

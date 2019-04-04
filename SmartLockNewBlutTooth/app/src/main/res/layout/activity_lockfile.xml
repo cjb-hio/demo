@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/lockFileActivity_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_bar_file"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/status_bar_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lockfile_title_back"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/lockfile_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/title_margin"
+            android:scaleType="center"
+            android:src="@mipmap/back"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/lockfile_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.75"
+            android:gravity="center_horizontal"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_20"/>
+
+        <ImageView
+            android:id="@+id/bluebg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/lockfile_title_back"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/lockfile_search"
+            android:background="@mipmap/bluef"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/lockfile_search"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/margin_10"
+            android:scaleType="center"
+            android:src="@mipmap/sousuo"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_file"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_lockId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:itemImgVisible="gone"
+                app:itemText="@string/locK_ID"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_lockname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:itemImgVisible="gone"
+                app:itemText="@string/lock_name"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_registAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:itemImgVisible="gone"
+                app:itemText="@string/registadress"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_item_bg"
+                app:itemImgHeight="@dimen/margin_20"
+                app:itemImgSrc="@mipmap/into"
+                app:itemImgVisible="visible"
+                app:itemImgWidth="20dp"
+                app:itemText="@string/lockposition"
+                app:itemText2="查看"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_village_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_item_bg"
+                android:visibility="gone"
+                app:itemImgHeight="@dimen/margin_20"
+                app:itemImgSrc="@mipmap/into"
+                app:itemImgVisible="visible"
+                app:itemImgWidth="20dp"
+                app:itemText="关联图"
+                app:itemText2="查看"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_number_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_item_bg"
+                app:itemImgHeight="@dimen/margin_20"
+                app:itemImgSrc="@mipmap/into"
+                app:itemImgVisible="visible"
+                app:itemImgWidth="@dimen/margin_20"
+                app:itemText="@string/locknumber"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:itemImgVisible="gone"
+                app:itemText="@string/locktype"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_areaname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:itemImgVisible="gone"
+                app:itemText="@string/belongarea"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_item_bg"
+                app:itemImgHeight="@dimen/margin_20"
+                app:itemImgSrc="@mipmap/into"
+                app:itemImgVisible="visible"
+                app:itemImgWidth="@dimen/margin_20"
+                app:itemText="@string/key_atate"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_operator"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:itemImgVisible="gone"
+                app:itemText="@string/operator"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_dateTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:itemImgVisible="gone"
+                app:itemText="@string/regist_time"
+                app:itemTextColor="@color/black"/>
+
+            <com.xyw.smartlock.view.LayoutItem1
+                android:id="@+id/lockfile_lockState"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:itemImgVisible="gone"
+                app:itemText="@string/lockState"
+                app:itemTextColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/lock_cancellation1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:layout_marginTop="@dimen/controls_30"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_selector"
+                    android:text="@string/cancellationlock"
+                    android:textSize="@dimen/textSize_20"/>
+
+                <Button
+                    android:id="@+id/lock_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/controls_30"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:background="@drawable/btn_selector"
+                    android:text="@string/delete_lock"
+                    android:textSize="@dimen/textSize_20"/>
+
+                <Button
+                    android:id="@+id/lock_cancellation2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/margin_30"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:layout_marginTop="@dimen/controls_30"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_selector"
+                    android:text="@string/Modifylock"
+                    android:textSize="@dimen/textSize_20"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/fl_cancel_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar_file"
+        android:background="@color/transprarent_gray"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+</RelativeLayout>

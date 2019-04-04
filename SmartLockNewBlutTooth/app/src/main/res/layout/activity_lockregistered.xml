@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/status_bar_color">
+
+        <ImageView
+            android:id="@+id/lockregistered_title_back"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_margin"
+            android:scaleType="center"
+            android:src="@mipmap/back"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/lockregistered_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_20"/>
+
+        <ImageView
+            android:id="@+id/bluebg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/imageview_qrcode_button"
+            android:background="@mipmap/bluef"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/imageview_qrcode_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:gravity="center"
+            android:src="@mipmap/saoyisao"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_go_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_locK_ID"/>
+
+        <EditText
+            android:id="@+id/lockregister_lockId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.93"
+            android:background="@null"
+            android:hint="@string/enter_locK_ID"
+            android:lines="1"
+            android:inputType="phone"
+            android:maxLength="16"
+            android:padding="@dimen/padding_5"
+            android:textSize="@dimen/textSize_15"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_go_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_lock_name"/>
+
+        <EditText
+            android:id="@+id/lockregist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:hint="@string/enter_lockNmae"
+            android:lines="1"
+            android:padding="@dimen/padding_5"
+            android:textSize="@dimen/textSize_15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_go_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_regist_place"/>
+
+        <EditText
+            android:id="@+id/lockregist_registaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:hint="@string/enter_regist_place"
+            android:lines="1"
+            android:padding="@dimen/padding_5"
+            android:textSize="@dimen/textSize_15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_go_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register_locktype"/>
+
+        <Spinner
+            android:id="@+id/lockregist_type"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:dropDownVerticalOffset="35dp"
+            android:hint="@string/enter_locktype"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_toLeftOf="@+id/lockregist_numberID"
+            android:background="@drawable/btn_go_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_locknumber"/>
+
+            <EditText
+                android:id="@+id/lockregist_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="0.93"
+                android:background="@null"
+                android:hint="@string/enter_locknumber"
+                android:lines="1"
+                android:padding="@dimen/padding_5"
+                android:textSize="@dimen/textSize_15"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/lockregist_numberID"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/nfc"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_toLeftOf="@+id/lockregist_positionimage2"
+            android:background="@drawable/btn_go_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:text="@string/register_lock_bit"/>
+
+            <TextView
+                android:id="@+id/lockregist_lockposition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_weight="0.83"
+                android:gravity="center_horizontal"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/lockregist_positionimage2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/location"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_go_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="@string/register_regist_time"/>
+
+        <TextView
+            android:id="@+id/lockregist_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.93"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/margin_5"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/lockregist_complete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/determine"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

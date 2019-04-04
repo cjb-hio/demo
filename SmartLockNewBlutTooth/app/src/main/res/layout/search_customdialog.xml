@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/searchDialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="@string/search_lockid"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/searchDialog_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@drawable/et_nor"
+            android:format24Hour="yyyy-MM-dd"
+            android:hint="请输入锁的ID"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="16"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="@string/search_lockname"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/searchDialog_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@drawable/et_nor"
+            android:format24Hour="yyyy-MM-dd"
+            android:hint="请输入锁的名称"
+            android:inputType="text"
+            android:lines="1"
+            android:padding="@dimen/margin_5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="@string/search_lockaddress"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/searchDialog_Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@drawable/et_nor"
+            android:format24Hour="yyyy-MM-dd"
+            android:hint="请输入锁的地址"
+            android:inputType="text"
+            android:lines="1"
+            android:padding="@dimen/margin_5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="@string/search_meterid"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/searchDialog_meter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@drawable/et_nor"
+            android:format24Hour="yyyy-MM-dd"
+            android:hint="请输入表的ID"
+            android:inputType="phone"
+            android:lines="1"
+            android:padding="@dimen/margin_5"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/searchDialog_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_selector"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="查询"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/searchDialog_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_selector"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="取消"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

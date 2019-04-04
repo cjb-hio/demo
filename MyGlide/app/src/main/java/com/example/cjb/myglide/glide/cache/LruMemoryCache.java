@@ -5,18 +5,19 @@ import android.util.LruCache;
 
 import com.example.cjb.myglide.glide.cache.recycle.Resource;
 
-public class LruMemoryCache extends LruCache<Key,Resource> implements MemoryCache{
+public class LruMemoryCache extends LruCache<Key, Resource> implements MemoryCache {
 
     private MemoryCache.ResourceRemoveListener resourceRemoveListener;
+
     public LruMemoryCache(int maxSize) {
         super(maxSize);
     }
 
     @Override
     protected int sizeOf(Key key, Resource value) {
-        if(Build.VERSION.SDK_INT>Build.VERSION_CODES.KITKAT){
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT) {
             return value.getBitmap().getAllocationByteCount();
-        }else {
+        } else {
             return value.getBitmap().getByteCount();
         }
     }
@@ -28,9 +29,8 @@ public class LruMemoryCache extends LruCache<Key,Resource> implements MemoryCach
 
     @Override
     public void setResourceRemoveListener(ResourceRemoveListener listener) {
-        this.resourceRemoveListener=listener;
+        this.resourceRemoveListener = listener;
     }
-
 
 
 }

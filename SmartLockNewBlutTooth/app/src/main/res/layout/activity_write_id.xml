@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    tools:context=".PdReadIdActivity" >
+
+    <include
+        android:id="@+id/commontitlebar"
+        layout="@layout/activity_commontitlebar" />
+
+    <EditText
+        android:id="@+id/write_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commontitlebar"
+        android:hint="输入ID:"
+        android:textSize="@dimen/textSize_18"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/write_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_selector"
+        android:text="确定" />
+
+</RelativeLayout>

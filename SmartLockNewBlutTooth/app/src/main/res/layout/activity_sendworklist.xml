@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <include
+        layout="@layout/activity_commontitlebar"/>
+
+    <com.xyw.smartlock.bean.RefreshableView
+        android:id="@+id/SendWork_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xyw.smartlock.utils.SilderListView
+            android:id="@+id/SendWork_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1.0px"
+            android:drawSelectorOnTop="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:scrollingCache="false"/>
+    </com.xyw.smartlock.bean.RefreshableView>
+
+</LinearLayout>

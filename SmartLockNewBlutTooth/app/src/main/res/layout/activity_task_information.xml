@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.xyw.smartlock.activity.TaskInformation">
+
+    <include
+        android:id="@id/commontitlebar"
+        layout="@layout/activity_commontitlebar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/commontitlebar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/task_linearlayoutx"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_bottom_line"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/task_user_name"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:text="  "
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/task_linearlayout01"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/task_linearlayoutx"
+                android:background="@drawable/layout_bottom_line"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/area"/>
+
+                <TextView
+                    android:id="@+id/tv_from_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:text="  "
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/task_linearlayout02"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/task_linearlayout01"
+                android:background="@drawable/layout_bottom_line"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/start_time"/>
+
+                <TextView
+                    android:id="@+id/task_from_startdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:gravity="center"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/task_linearlayout03"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/task_linearlayout02"
+                android:background="@drawable/layout_bottom_line"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/end_time"/>
+
+                <TextView
+                    android:id="@+id/task_from_enddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:gravity="center"
+                    android:textSize="18sp"/>
+
+                <requestFocus/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/task_linearlayoutcenter"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/task_linearlayout03"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/neirong"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tasktrue"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/taskfalse"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/btn_go_bg"
+                android:onClick="taskTrue"
+                android:text="@string/tasktrue"/>
+
+            <Button
+                android:id="@+id/taskfalse"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/task_linearlayout04"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/btn_go_bg"
+                android:onClick="taskFalse"
+                android:text="@string/taskfalse"/>
+
+            <TextView
+                android:id="@+id/tv_zhuangtai"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/task_linearlayout04"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/task_linearlayout04"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/task_linearlayoutcenter"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/task_from_content_application"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_go_bg"
+                    android:padding="5dp"
+                    android:textSize="18sp"/>
+
+                <include
+                    layout="@layout/from_list_layout"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

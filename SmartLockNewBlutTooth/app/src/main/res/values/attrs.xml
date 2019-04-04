@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomButton">
+        <attr name="textsize" format="dimension"/>
+        <attr name="textcolor" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="imgsrc" format="reference"/>
+        <attr name="imgwidth" format="dimension"/>
+        <attr name="imgheight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="LayoutItem1">
+        <attr name="itemImgSrc" format="reference"/>
+        <attr name="itemImgWidth" format="dimension"/>
+        <attr name="itemImgHeight" format="dimension"/>
+        <attr name="itemImgVisible">
+            <enum name="visible" value="0x00000000"/>
+            <enum name="gone" value="0x00000008"/>
+            <enum name="invisible" value="0x00000004"/>
+        </attr>
+
+        <attr name="itemTextSize" format="dimension"/>
+        <attr name="itemTextColor" format="color"/>
+        <attr name="itemText" format="string"/>
+        <attr name="itemTextVisible">
+            <enum name="visible" value="0x00000000"/>
+            <enum name="gone" value="0x00000008"/>
+            <enum name="invisible" value="0x00000004"/>
+        </attr>
+
+        <attr name="itemText2Size" format="dimension"/>
+        <attr name="itemText2Color" format="color"/>
+        <attr name="itemText2" format="string"/>
+        <attr name="itemText2Visible">
+            <enum name="visible" value="0x00000000"/>
+            <enum name="gone" value="0x00000008"/>
+            <enum name="invisible" value="0x00000004"/>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditText">
+
+        <attr name="etImgTitleSrc" format="reference"/>
+        <attr name="etImgTitleWidth" format="dimension"/>
+        <attr name="etImgTitleHeight" format="dimension"/>
+        <attr name="etImgTitleVisible">
+            <enum name="visible" value="0x00000000"/>
+            <enum name="gone" value="0x00000008"/>
+            <enum name="invisible" value="0x00000004"/>
+        </attr>
+
+        <attr name="etImgDeleteSrc" format="reference"/>
+        <attr name="etImgDeleteWidth" format="dimension"/>
+        <attr name="etImgDeleteHeight" format="dimension"/>
+        <attr name="etImgDeleteVisible">
+            <enum name="visible" value="0x00000000"/>
+            <enum name="gone" value="0x00000008"/>
+            <enum name="invisible" value="0x00000004"/>
+        </attr>
+
+        <attr name="etTextTitle" format="string"/>
+        <attr name="etTextTitleLines" format="integer"/>
+        <attr name="etTextTitleSize" format="dimension"/>
+        <attr name="etTextTitleColor" format="color"/>
+        <attr name="etTextTitleVisible">
+            <enum name="visible" value="0x00000000"/>
+            <enum name="gone" value="0x00000008"/>
+            <enum name="invisible" value="0x00000004"/>
+        </attr>
+
+        <attr name="etInputText" format="string"/>
+        <attr name="etInputTextLines" format="integer"/>
+        <attr name="etInputHint" format="string"/>
+        <attr name="etInputTextColor" format="color"/>
+        <attr name="etInputTextSize" format="dimension"/>
+        <attr name="etInputMaxLength" format="integer"/>
+        <attr name="etInputType" format="integer">
+            <enum name="phone" value="0x00000003"/>
+            <enum name="text" value="0x00000001"/>
+            <enum name="none" value="0x00000000"/>
+            <enum name="date" value="0x00000014"/>
+            <enum name="dateTime" value="0x00000004"/>
+            <enum name="time" value="0x00000024"/>
+            <enum name="number" value="0x00000002"/>
+            <enum name="numberDecimal" value="0x00002002"/>
+            <enum name="numberPassword" value="0x00000012"/>
+            <enum name="numberSigned" value="0x00001002"/>
+            <enum name="textPhonetic" value="0x000000c1"/>
+            <enum name="textAutoComplete" value="0x00010001"/>
+            <enum name="textAutoCorrect" value="0x00008001"/>
+            <enum name="textCapCharacters" value="0x00001001"/>
+            <enum name="textCapSentences" value="0x00004001"/>
+            <enum name="textCapWords" value="0x00002001"/>
+            <enum name="textEmailAddress" value="0x000000d1"/>
+            <enum name="textEmailSubject" value="0x00000031"/>
+            <enum name="textPassword" value="0x00000081"/>
+            <enum name="textPersonName" value="0x00000061"/>
+        </attr>
+        <attr name="etInputVisible">
+            <enum name="visible" value="0x00000000"/>
+            <enum name="gone" value="0x00000008"/>
+            <enum name="invisible" value="0x00000004"/>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomItemTextView">
+
+        <attr name="title" format="string"/>
+        <attr name="titleColor" format="color"/>
+        <attr name="titleWidth" format="dimension"/>
+        <attr name="titleHeight" format="dimension"/>
+        <attr name="titleLines" format="integer"/>
+        <attr name="titleSize" format="dimension"/>
+        <attr name="titleVisible">
+            <enum name="visible" value="0x00000000"/>
+            <enum name="gone" value="0x00000008"/>
+            <enum name="invisible" value="0x00000004"/>
+        </attr>
+
+        <attr name="content" format="string"/>
+        <attr name="contentColor" format="color"/>
+        <attr name="contentWidth" format="dimension"/>
+        <attr name="contentHeight" format="dimension"/>
+        <attr name="contentLines" format="integer"/>
+        <attr name="contentSize" format="dimension"/>
+        <attr name="contentVisible">
+            <enum name="visible" value="0x00000000"/>
+            <enum name="gone" value="0x00000008"/>
+            <enum name="invisible" value="0x00000004"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

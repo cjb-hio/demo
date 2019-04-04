@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Light_grey">
+
+    <include
+        android:id="@+id/commontitlebar2"
+        layout="@layout/activity_commontitlebar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commontitlebar2"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal">
+
+        <com.xyw.smartlock.bean.MyView
+            android:id="@+id/my_view"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:background="@mipmap/suo_faile"/>
+
+        <ImageView
+            android:id="@+id/iv_anim"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/suo_anim"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_jingao"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/suo_jingao_anim"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_unlock_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_Unlock"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/unlock_currentArea"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/zhuangtai_wait_bg"
+                android:gravity="center"
+                android:text="请靠近感应解锁"
+                android:textColor="@color/zhuangtai_wait"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/unlock_currentArea"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="当前区域"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

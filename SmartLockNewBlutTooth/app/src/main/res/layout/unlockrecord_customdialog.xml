@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:background="@color/white"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/unlockrecord__customdialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="开始时间："/>
+
+        <TextView
+            android:id="@+id/unlockrecord_textview1"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:background="@drawable/et_nor"
+            android:padding="8dp"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_height="wrap_content"
+            android:format24Hour="yyyy-MM-dd"
+            android:hint="2016-04-26"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="结束时间："/>
+
+        <TextView
+            android:id="@+id/unlockrecord_textview2"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:background="@drawable/et_nor"
+            android:padding="8dp"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_height="wrap_content"
+            android:format24Hour="yyyy-MM-dd"
+            android:hint="2016-04-26"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:textSize="16sp"
+            android:text="@string/unlock_people"/>
+
+        <TextView
+            android:id="@+id/ed_quer_user"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_go_bg"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="15"
+            android:onClick="toSelectUser"
+            android:padding="8dp"
+            android:text="所有"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/query_lock_id"/>
+
+        <EditText
+            android:id="@+id/ed_id"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_go_bg"
+            android:layout_marginRight="@dimen/margin_20"
+            android:gravity="center"
+            android:hint="所有"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="16"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:scrollHorizontally="true"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/unlockrecord_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_selector"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="查询"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/unlockrecord_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_selector"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="取消"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

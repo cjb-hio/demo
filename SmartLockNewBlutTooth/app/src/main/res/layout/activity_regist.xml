@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        android:id="@id/commontitlebar"
+        layout="@layout/activity_commontitlebar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_40"
+                android:paddingRight="@dimen/padding_40">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/controls_30"
+                        android:layout_height="@dimen/controls_30"
+                        android:src="@mipmap/phone"/>
+
+                    <EditText
+                        android:id="@+id/regist_etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/enter_phone_number"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/view"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_40"
+                android:paddingRight="@dimen/padding_40">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/controls_30"
+                        android:layout_height="@dimen/controls_30"
+                        android:src="@mipmap/phone"/>
+
+                    <EditText
+                        android:id="@+id/regist_etCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/enter_code"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:paddingLeft="5dp"/>
+
+                    <Button
+                        android:id="@+id/regist_btnCode"
+                        android:layout_width="90dp"
+                        android:layout_height="@dimen/margin_40"
+                        android:background="@drawable/btn_selector"
+                        android:text="发送验证码"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_16"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/view"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_40"
+                android:paddingRight="@dimen/padding_40">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/controls_30"
+                        android:layout_height="@dimen/controls_30"
+                        android:src="@mipmap/phone"/>
+
+                    <EditText
+                        android:id="@+id/regist_Referees_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/regist_Referees_number"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:nextFocusForward="@+id/regist_etDepartment"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/view"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_40"
+                android:paddingRight="@dimen/padding_40">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/controls_30"
+                        android:layout_height="@dimen/controls_30"
+                        android:src="@mipmap/user"/>
+
+                    <EditText
+                        android:id="@+id/regist_etUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/enter_username"
+                        android:imeOptions="actionNext"
+                        android:lines="1"
+                        android:nextFocusForward="@+id/regist_etDepartment"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/view"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_40"
+                android:paddingRight="@dimen/padding_40">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/controls_30"
+                        android:layout_height="@dimen/controls_30"
+                        android:src="@mipmap/user"/>
+
+                    <EditText
+                        android:id="@+id/regist_etDepartment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/enter_Department"
+                        android:imeOptions="actionNext"
+                        android:lines="1"
+                        android:nextFocusForward="@+id/regist_etPsw"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/view"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_40"
+                android:paddingRight="@dimen/padding_40">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/controls_30"
+                        android:layout_height="@dimen/controls_30"
+                        android:src="@mipmap/lock"/>
+
+                    <EditText
+                        android:id="@+id/regist_etPsw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/enter_password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:nextFocusForward="@+id/regist_etRepeatPsw"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/view"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_40"
+                android:paddingRight="@dimen/padding_40">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/controls_30"
+                        android:layout_height="@dimen/controls_30"
+                        android:src="@mipmap/lock"/>
+
+                    <EditText
+                        android:id="@+id/regist_etRepeatPsw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/enter_repeat_password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:nextFocusForward="@+id/regist"
+                        android:paddingLeft="5dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/view"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_40"
+                android:paddingRight="@dimen/padding_40">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/check"/>
+
+                    <TextView
+                        android:id="@+id/user_registration_agreement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_registration_agreement"
+                        android:textColor="@color/textcolor_theme"
+                        android:textSize="@dimen/textSize_16"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/regist"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_marginBottom="@dimen/margin_60"
+                    android:layout_marginTop="@dimen/margin_25"
+                    android:background="@drawable/btn_selector"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_16"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

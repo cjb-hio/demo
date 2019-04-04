@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_commontitlebar"/>
+
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/layout_bottom_line">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/unit"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/Audit_Unit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:padding="@dimen/padding_5"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/layout_bottom_line"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/team"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:id="@+id/audit_team"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/margin_10"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/padding_5"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/layout_bottom_line"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/number"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:id="@+id/audit_team_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:padding="@dimen/padding_5"
+                                android:layout_marginRight="@dimen/margin_10"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LinearLayout01"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/layout_bottom_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/Send_workers"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/Audit_Send_workers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:padding="@dimen/padding_5"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/layout_bottom_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/Working_controller"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/Audit_head"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:padding="@dimen/padding_5"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/work_of_personnel"
+                            android:textSize="@dimen/textSize_15"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edt_go_bg">
+
+                            <TextView
+                                android:id="@+id/audit_person_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:padding="@dimen/margin_5"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/Audit_statistics_number"
+                                android:layout_below="@+id/audit_person_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"/>
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/addSend_edText_size"-->
+                                <!--android:layout_width="60dp"-->
+                                <!--android:layout_height="30dp"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_alignParentRight="true"-->
+                                <!--android:gravity="center"/>-->
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/layout_bottom_line"
+                    android:layout_below="@+id/LinearLayout02"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/planning_beginTime"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/Audit_beginDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout04"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/layout_bottom_line"
+                    android:layout_below="@+id/LinearLayout03"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/planning_endTime"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/Audit_endDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LinearLayout04"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Working_place_and_job_content"
+                        android:textSize="@dimen/textSize_15"/>
+
+                    <TextView
+                        android:id="@+id/Audit_Demo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edt_go_bg"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/margin_5"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout06"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/LinearLayout05"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/layout_bottom_line"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:gravity="center"
+                        android:text="@string/traffic_tools_title"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/Audit_send_traffic_tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:lines="1"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:padding="@dimen/margin_5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_15"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout07"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/LinearLayout06"
+                    android:background="@drawable/layout_bottom_line"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="@string/driver"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/Audit_send_driver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:lines="1"
+                        android:padding="@dimen/padding_5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_15"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout08"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LinearLayout07"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/instruments_tools_materials"
+                        android:textSize="@dimen/textSize_15"/>
+
+                    <TextView
+                        android:id="@+id/Audit_AddProductionTools"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edt_go_bg"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/margin_5"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout09"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LinearLayout08"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/considerations"
+                        android:textSize="@dimen/textSize_15"/>
+
+                    <TextView
+                        android:id="@+id/Audit_AddSafetyMatters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="@dimen/margin_5"
+                        android:background="@drawable/edt_go_bg"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_15"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/LinearLayout013"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LinearLayout09"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:text="@string/ConfirmSignature"
+                    android:textSize="@dimen/textSize_15"/>
+
+                <GridView
+                    android:id="@+id/Audit_picture_GridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/LinearLayout013"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/btn_go_bg"
+                    android:columnWidth="@dimen/controls_105"
+                    android:gravity="center"
+                    android:horizontalSpacing="30dp"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:stretchMode="spacingWidth"/>
+
+                <Button
+                    android:id="@+id/Audit_picture_Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Audit_picture_GridView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/btn_selector"
+                    android:textColor="@color/white"
+                    android:text="点此签名"/>
+
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_below="@+id/Audit_picture_Button"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="@string/Note_picture_title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_16"/>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_001"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layout_bottom_line"
+                        android:layout_marginTop="@dimen/margin_10">
+
+                        <TextView
+                            android:id="@+id/relativeLayout_001_TextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_centerVertical="true"
+                            android:text="工作前："/>
+
+                        <ImageView
+                            android:id="@+id/relativeLayout_001_ImageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/controls_60"
+                            android:layout_centerInParent="true"/>
+
+                        <TextView
+                            android:id="@+id/relativeLayout_001_TextView2"
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:id="@+id/relativeLayout_001_ImageView2"
+                            android:layout_width="@dimen/controls_40"
+                            android:layout_height="@dimen/controls_40"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:src="@mipmap/addbutton"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_002"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layout_bottom_line"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/relativeLayout_002_TextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_centerVertical="true"
+                            android:text="工作中："/>
+
+                        <ImageView
+                            android:id="@+id/relativeLayout_002_ImageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/controls_60"
+                            android:layout_centerInParent="true"/>
+
+                        <TextView
+                            android:id="@+id/relativeLayout_002_TextView2"
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:id="@+id/relativeLayout_002_ImageView2"
+                            android:layout_width="@dimen/controls_40"
+                            android:layout_height="@dimen/controls_40"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:src="@mipmap/addbutton"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_003"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/layout_bottom_line"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/relativeLayout_003_TextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_centerVertical="true"
+                            android:text="工作后："/>
+
+                        <ImageView
+                            android:id="@+id/relativeLayout_003_ImageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/controls_60"
+                            android:layout_centerInParent="true"/>
+
+                        <TextView
+                            android:id="@+id/relativeLayout_003_TextView2"
+                            android:layout_width="1dp"
+                            android:layout_height="1dp"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:id="@+id/relativeLayout_003_ImageView2"
+                            android:layout_width="@dimen/controls_40"
+                            android:layout_height="@dimen/controls_40"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:src="@mipmap/addbutton"/>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/relativeLayout_004"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/Audit_Note_picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:gravity="start"
+                            android:padding="@dimen/margin_5"
+                            android:layout_toLeftOf="@+id/note_button"
+                            android:background="@drawable/edt_go_bg"
+                            android:hint="@string/Note_picture"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+                        <Button
+                            android:id="@+id/note_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:background="@drawable/btn_selector"
+                            android:text="@string/submit"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_18"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout_005"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout_004"
+                        android:layout_marginTop="10dp">
+
+                        <!--<Button-->
+                            <!--android:id="@+id/time_button"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:background="@drawable/btn_selector"-->
+                            <!--android:text="@string/Time_confirm"-->
+                            <!--android:layout_margin="@dimen/margin_5"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:textSize="@dimen/textSize_18"/>-->
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout14"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/layout_bottom_line"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/actual_beginTime"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:id="@+id/Audit_actual_beginDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/Audit_actual_beginTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/black"
+                                android:layout_marginRight="@dimen/margin_10"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout15"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/layout_bottom_line"
+                            android:layout_below="@+id/LinearLayout14"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/actual_endTime"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:id="@+id/Audit_actual_endDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:id="@+id/Audit_actual_endTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/black"
+                                android:layout_marginRight="@dimen/margin_10"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/LinearLayout12"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <Button
+                        android:id="@+id/Audit_Agreed"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector"
+                        android:text="@string/AgreedAndSignature"/>
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+
+                    <Button
+                        android:id="@+id/Audit_UnAgreed"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector"
+                        android:text="@string/unAgreed"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

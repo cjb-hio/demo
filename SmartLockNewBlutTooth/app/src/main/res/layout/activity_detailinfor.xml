@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/commontitlebar2"
+            layout="@layout/activity_commontitlebar"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/lock_id_text2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/locKID"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/open_lock_adress_text3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/registposition"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/lock_positioning_image14"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/layout_item_bg"
+            app:itemImgHeight="@dimen/margin_20"
+            app:itemImgSrc="@mipmap/into"
+            app:itemImgVisible="visible"
+            app:itemImgWidth="@dimen/margin_20"
+            app:itemText="@string/GpsCoordinate"
+            app:itemText2Visible="gone"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/lock_option_text11"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/lockoption"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/operating_results_text12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/lockResult"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/lock_time_text5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/lockDateTime"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/open_L_BOX_NO__text6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/locknumber"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/open_lock_L_BOX_TYPE_text7"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/locktype"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/open_Areanumber_text13"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/belongarea_number"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/Area_ZONE_NAME_text9"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/belongarea_nane"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/operator_name_text1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/lock_name"
+            app:itemTextColor="@color/black"/>
+
+        <com.xyw.smartlock.view.LayoutItem1
+            android:id="@+id/lockperson_phone_text10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:itemImgVisible="gone"
+            app:itemText="@string/operator_phonenumber"
+            app:itemTextColor="@color/black"/>
+
+    </LinearLayout>
+
+</ScrollView>
