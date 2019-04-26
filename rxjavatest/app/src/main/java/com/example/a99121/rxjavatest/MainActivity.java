@@ -15,27 +15,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Person<? super Fruit> person=new Person<>();
+        person.setTag(new Apple());
+        person.setTag(new Pear());
 
-        Observable.just(1,2,3,4).subscribe(new Observer<Integer>() {
-            @Override
-            public void onSubscribe(Disposable d) {
+    }
 
-            }
 
-            @Override
-            public void onNext(Integer integer) {
-                Log.i("test","value:"+integer);
-            }
+    class Person<T>{
 
-            @Override
-            public void onError(Throwable e) {
+        public void setTag(T tag){
 
-            }
+        }
+    }
 
-            @Override
-            public void onComplete() {
+    class Fruit{
 
-            }
-        });
+    }
+    class Apple extends Fruit{
+
+    }
+
+    class Pear extends Fruit{
+
     }
 }
