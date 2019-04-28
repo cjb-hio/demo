@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="建立连接"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/connect"/>
+        <Button
+            android:text="读地址"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/readAdr"/>
+        <Button
+            android:text="读编码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/readcode"/>
+
+        <Button
+            android:text="秘钥测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/smtest"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="透传"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/writeAdr"/>
+        <EditText
+            android:id="@+id/editAdr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="写编码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/writecode"/>
+        <EditText
+            android:id="@+id/editcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="写地址"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/writeaddr"/>
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="开锁"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/open"/>
+        <Button
+            android:text="关锁"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/close"/>
+        <Button
+            android:text="读锁状态"
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="清除"
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LockBleDemo</string>
+    <string name="read_id">读ID</string>
+    <string name="write_id">写ID</string>
+    <string name="lock">落锁</string>
+    <string name="unlock">开锁</string>
+    <string name="title_activity_unlock">UnlockActivity</string>
+    <string name="bluetooth_connect_state">连接状态</string>
+    <string name="start_scan">开始扫描</string>
+    <string name="stop_scan">停止扫描</string>
+</resources>
