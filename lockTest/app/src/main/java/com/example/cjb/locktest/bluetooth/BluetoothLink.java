@@ -35,11 +35,14 @@ public class BluetoothLink implements ILink {
     private Context context;
     private BluetoothGatt bluetoothGatt;
 
-    static private String mode2Uuid="6e400001-b5a3-f393-e0a9-e50e24dcca9e";
-    static private String readUuid="6e400003-b5a3-f393-e0a9-e50e24dcca9e";
-    static private String writeUuid="6e400002-b5a3-f393-e0a9-e50e24dcca9e";
+    //static private String mode2Uuid="6e400001-b5a3-f393-e0a9-e50e24dcca9e";
+    static private String mode2Uuid="0000ffe0-0000-1000-8000-00805f9b34fb";
+    //static private String readUuid="6e400003-b5a3-f393-e0a9-e50e24dcca9e";
+    static private String readUuid="00002902-0000-1000-8000-00805f9b34fb";
+    //static private String writeUuid="6e400002-b5a3-f393-e0a9-e50e24dcca9e";
+    static private String writeUuid="0000ffe1-0000-1000-8000-00805f9b34fb";
 
-    private static String CLIENT_CHARACTERISTIC_CONFIG = "00002902-0000-1000-8000-00805f9b34fb";
+    //private static String CLIENT_CHARACTERISTIC_CONFIG = "00002902-0000-1000-8000-00805f9b34fb";
 
     BluetoothGattService writeBgs;
     BluetoothGattCharacteristic characteristic;
